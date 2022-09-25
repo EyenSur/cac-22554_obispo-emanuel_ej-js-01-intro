@@ -7,4 +7,4 @@ Año 2022
 <br>
 Ejercicio: JavaScript - Ejercicios de Introducción
 <br><br>
-[Vista Previa]()
+[Vista Previa](https://eyensur.github.io/cac-22554_obispo-emanuel_ej-js-01-intro/)
