@@ -1,0 +1,12 @@
+/* Start */
+.formBox {
+    border-radius: 1rem;
+    width: fit-content;
+    height: fit-content;
+    padding: 1rem 1.5rem;
+    margin: 1rem;
+}
+
+.barName {
+    border-radius: 0.4rem;
+}
