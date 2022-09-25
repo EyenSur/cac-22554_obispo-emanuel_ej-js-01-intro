@@ -12,7 +12,7 @@ function proccess(e) {
     let _numberB;
 
     // Presentar operaciones que se realizarán
-    console.log(`Operaciones a realizar:\n\nA + B = ¿?\n\nA - B = ¿?\n\nB - A = ¿?\n\nA * B = ¿?\n\nA / B = ¿?\n\nB / A = ¿?`);
+    console.log(`\nOperaciones a realizar:\n\nA + B = ¿?\n\nA - B = ¿?\n\nB - A = ¿?\n\nA * B = ¿?\n\nA / B = ¿?\n\nB / A = ¿?`);
 
     // Establecer el valor de la variable A
     do {
@@ -44,7 +44,7 @@ function proccess(e) {
     alert(`Los valores de A y B han sido registrados.\n\nA: ${_numberA}\n\nB: ${_numberB}\n\nA continuación se realizaran los cálculos pertinentes.`);
 
     // Presentar el resultado de las operaciones
-    console.log(`Resultados:\n\nA + B = ${_numberA + _numberB}\n\nA - B = ${_numberA - _numberB}\n\nB - A = ${_numberB - _numberA}\n\nA * B = ${_numberA * _numberB}\n\nA / B = ${_numberA / _numberB}\n\nB / A = ${_numberB / _numberA}`);
+    console.log(`\nResultados:\n\nA + B || ${_numberA} + ${_numberB} == ${_numberA + _numberB}\n\nA - B || ${_numberA} - ${_numberB} == ${_numberA - _numberB}\n\nB - A || ${_numberB} - ${_numberA} == ${_numberB - _numberA}\n\nA * B || ${_numberA} * ${_numberB} == ${_numberA * _numberB}\n\nA / B || ${_numberA} / ${_numberB} == ${_numberA / _numberB}\n\nB / A || ${_numberB} / ${_numberA} == ${_numberB / _numberA}`);
 }
 
 _start.onsubmit = proccess;
