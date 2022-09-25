@@ -1,29 +1,34 @@
 // Inicio
 console.log(`Ejercicio #5`);
+let _start;
+_start = document.getElementById("start");
 
-// Definir variables
-let _a;
-let _b;
-let _tempA;
-let _tempB;
+function proccess(e) {
 
-// Establecer los valores de A y B
-_a = parseInt(prompt(`Escribe un número entero para A:`));
-_b = parseInt(prompt(`Escribe un número entero para B:`));
+    e.preventDefault();
 
-// Mostrar los valores de A y B
-alert(`Valores para A y B recibidos.`)
-console.log(`Los valores para A y B son:\n ${_a} y ${_b}`)
+    // Definir variables
+    let _a;
+    let _b;
+    let _temp;
 
-alert(`Los valores de A y B serán intercambiados.`)
+    // Establecer los valores de A y B
+    _a = parseInt(prompt(`Escribe un número entero para A:`));
+    _b = parseInt(prompt(`Escribe un número entero para B:`));
 
-// Guardar los valores de A y B en variables temporales
-_tempA = _a;
-_tempB = _b;
+    // Mostrar los valores de A y B
+    alert(`Los valores para A y B fueron ingresados correctamente.`)
+    console.log(`Los valores para A y B son:\nA) ${_a}\nB) ${_b}`)
 
-// Asignar nuevos valores para A y B
-_a = _tempB;
-_b = _tempA;
+    alert(`A continuación, los valores de A y B serán intercambiados.`)
 
-// Mostrar los nuevos valores de A y B
-console.log(`Los nuevos valores para A y B son:\n ${_a} y ${_b}`)
+    // Intercambiar los valores de A y B
+    _temp = _a;
+    _a = _b;
+    _b = _temp;
+
+    // Mostrar los nuevos valores de A y B
+    console.log(`Los nuevos valores para A y B son:\nA) ${_a}\nB) ${_b}`)
+}
+
+_start.onsubmit = proccess;

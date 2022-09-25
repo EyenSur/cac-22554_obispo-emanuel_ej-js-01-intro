@@ -1,22 +1,31 @@
 // Inicio
 console.log(`Ejercicio #3.`)
+let _start;
+_start = document.getElementById("start");
 
-// Definir variables
-let _nota1; // Biología
-let _nota2; // Matemática
-let _nota3; // Historia
-let _promedio; // ( _n1 + _n2 + _n3 ) / _materias
-const _materias = 3;
+function proccess(e) {
 
-_nota1 = parseFloat(prompt(`Nota de Biología:`));
-console.log(`La nota de biología es: ${_nota1}`);
+    e.preventDefault();
 
-_nota2 = parseFloat(prompt(`Nota de Matemática:`));
-console.log(`La nota de matemática es: ${_nota2}`);
+    // Definir variables
+    let _nota1; // Biología
+    let _nota2; // Matemática
+    let _nota3; // Historia
+    let _promedio; // ( _n1 + _n2 + _n3 ) / _materias
+    const _materias = 3;
 
-_nota3 = parseFloat(prompt(`Nota de Historia:`));
-console.log(`La nota de historia es: ${_nota3}`);
+    _nota1 = parseFloat(prompt(`Nota de Biología:`));
+    console.log(`La nota de biología es: ${_nota1}`);
 
-_promedio = parseFloat(( _nota1 + _nota2 + _nota3 ) / _materias);
+    _nota2 = parseFloat(prompt(`Nota de Matemática:`));
+    console.log(`La nota de matemática es: ${_nota2}`);
 
-console.log(`El promedio es: ${_promedio}`);
+    _nota3 = parseFloat(prompt(`Nota de Historia:`));
+    console.log(`La nota de historia es: ${_nota3}`);
+
+    _promedio = parseFloat(( _nota1 + _nota2 + _nota3 ) / _materias);
+
+    console.log(`El promedio es: ${_promedio}`);
+}
+
+_start.onsubmit = proccess;

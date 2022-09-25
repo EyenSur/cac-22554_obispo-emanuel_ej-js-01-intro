@@ -10,8 +10,7 @@ _userForm = document.getElementById("mainForm");
 
 // Establecer el contenido de la función 'proccess()'
 function proccess(e) {
-
-    // Prevenir que el evento regrese al estado por default
+    
     e.preventDefault();
 
     // Obtener el valor de 'userName'
