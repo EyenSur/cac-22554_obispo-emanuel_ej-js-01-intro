@@ -8,14 +8,14 @@ function iniciar(e) {
     let _userNumber;
     let _oppositeNumber;
     let _inverseNumber;
-    const _numberOne = 1;
-    const _numberZero = 0;
+    const _n1 = 1;
+    const _n0 = 0;
 
     // Establecer el número de '_userNumber'
     _userNumber = prompt(`Escribe un número entero.`);
 
     // Mensaje en caso de no ser número entero
-    if (_userNumber % 1 != 0) {
+    if (_userNumber % 1 != _n0) {
 
         // En la consola
         console.log(`El número no es un entero.\nLos decimales fueron truncados para este ejercicio.`);
@@ -28,10 +28,10 @@ function iniciar(e) {
     _userNumber = parseInt(_userNumber)
 
     // Obtener el número opuesto
-    _oppositeNumber = (_numberZero - _userNumber);
+    _oppositeNumber = (_n0 - _userNumber);
 
     // Obtener el número inverso
-    _inverseNumber = (_numberOne / _userNumber);
+    _inverseNumber = (_n1 / _userNumber);
 
     // Presentar los números en la consola
     console.log (`Tu número es: ${_userNumber}\nEl opuesto es: ${_oppositeNumber}\nEl número inverso es: ${_inverseNumber}

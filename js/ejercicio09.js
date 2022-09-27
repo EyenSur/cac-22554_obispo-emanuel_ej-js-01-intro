@@ -16,7 +16,7 @@ function iniciar(e) {
     // Establecer primer ángulo
     do {
         do {
-            _angulo1 = parseFloat(prompt(`Ingresar los grados del primer ángulo.\nEl número debe ser entre 1° y 178°.`));
+            _angulo1 = parseFloat(prompt(`Ingresar los grados del primer ángulo.\nEl número debe ser entre 1° y 178° (inclusive).`));
         
             if (isNaN(_angulo1)) {
                 alert(`El caracter introducido no es un número.`);
@@ -34,7 +34,7 @@ function iniciar(e) {
     // Establecer segundo ángulo
     do {
         do {
-            _angulo2 = parseFloat(prompt(`Ingresar los grados del segundo ángulo.\nEl número debe ser entre 1° y ${_gradosRestantes}.`));
+            _angulo2 = parseFloat(prompt(`Ingresar los grados del segundo ángulo.\nEl número debe ser entre 1° y ${_gradosRestantes} (inclusive).`));
         
             if (isNaN(_angulo2)) {
                 alert(`El caracter introducido no es un número.`);

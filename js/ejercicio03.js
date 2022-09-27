@@ -5,22 +5,22 @@ function iniciar(e) {
     console.log(`\n————————————————————\nEjercicio #01\n————————————————————`);
 
     // Definir variables
-    let _nota1; // Biología
-    let _nota2; // Matemática
-    let _nota3; // Historia
-    let _promedio; // ( _n1 + _n2 + _n3 ) / _materias
-    const _materias = 3;
+    let _trim1;     // Primer trimestre
+    let _trim2;     // Segundo trimestre
+    let _trim3;     // Tercer trimestre
+    let _promedio;  // ( _trim1 + _trim2 + _trim3 ) / _trimestre
+    const _trimestre = 3;
 
-    _nota1 = parseFloat(prompt(`Nota de Biología:`));
-    console.log(`La nota de biología es: ${_nota1}`);
+    _trim1 = parseFloat(prompt(`Ingresar la nota del primer trimestre.`));
+    console.log(`La nota del primer trimestre es: ${_trim1}`);
 
-    _nota2 = parseFloat(prompt(`Nota de Matemática:`));
-    console.log(`La nota de matemática es: ${_nota2}`);
+    _trim2 = parseFloat(prompt(`Ingresar la nota del segundo trimestre.`));
+    console.log(`La nota del segundo trimestre es: ${_trim2}`);
 
-    _nota3 = parseFloat(prompt(`Nota de Historia:`));
-    console.log(`La nota de historia es: ${_nota3}`);
+    _trim3 = parseFloat(prompt(`Ingresar la nota del tercer trimestre.`));
+    console.log(`La nota del tercer trimestre es: ${_trim3}`);
 
-    _promedio = parseFloat(( _nota1 + _nota2 + _nota3 ) / _materias);
+    _promedio = parseFloat(( _trim1 + _trim2 + _trim3 ) / _trimestre);
 
     console.log(`El promedio es: ${_promedio}`);
 }

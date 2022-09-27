@@ -16,7 +16,7 @@ function iniciar(e) {
 
     // Ingresar horas por jornada
     _horasJornada = parseFloat(prompt(`Ingresa las horas por jornada:`));
-    console.log(`Horas por jornada: ${_horasJornada}`);
+    console.log(`Horas por jornada: ${_horasJornada}Hrs`);
 
     // Calcular el salario semanal
     _salarioSemana = parseFloat( ( _horasJornada * _jornadas ) * _salarioHora );
