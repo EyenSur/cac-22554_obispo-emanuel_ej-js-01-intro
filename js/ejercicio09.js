@@ -1,11 +1,8 @@
-// Inicio
-console.log(`Ejercicio #9`);
-let _start;
-_start = document.getElementById("start");
-
-function proccess(e) {
-
+function iniciar(e) {
     e.preventDefault();
+
+    // Inicio
+    console.log(`\n————————————————————\nEjercicio #01\n————————————————————`);
 
     // Definir variables
     let _angulo1;
@@ -58,4 +55,4 @@ function proccess(e) {
     console.log(`El triángulo esta compuesto por los siguientes ángulos.\n\nPrimer ángulo: ${_angulo1}°\n\nSegundo ángulo: ${_angulo2}°\n\nTercer ángulo: ${_angulo3}°`);
 }
 
-_start.onsubmit = proccess;
+document.getElementById("start09").onsubmit = iniciar;

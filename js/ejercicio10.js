@@ -1,11 +1,8 @@
-// Inicio
-console.log(`Ejercicio #9`);
-let _start;
-_start = document.getElementById("start");
-
-function proccess(e) {
-
+function iniciar(e) {
     e.preventDefault();
+
+    // Inicio
+    console.log(`\n————————————————————\nEjercicio #01\n————————————————————`);
 
     // Definir variables
     let _inv1;
@@ -79,4 +76,4 @@ function proccess(e) {
     console.log(`Inversor N°1: $${_inv1} (${_perc1}%)\n\nInversor N°2: $${_inv2} (${_perc2}%)\n\nInversor N°3: $${_inv3} (${_perc3}%)\n\nMonto total de la inversión: $${_invTotal}`);
 }
 
-_start.onsubmit = proccess;
+document.getElementById("start10").onsubmit = iniciar;

@@ -1,11 +1,8 @@
-// Inicio
-console.log(`Ejercicio #4`);
-let _start;
-_start = document.getElementById("start");
-
-function proccess(e) {
-
+function iniciar(e) {
     e.preventDefault();
+
+    // Inicio
+    console.log(`\n————————————————————\nEjercicio #01\n————————————————————`);
 
     // Definir variables
     let _horasJornada;
@@ -26,4 +23,4 @@ function proccess(e) {
     console.log(`El salario semanal es de: $${_salarioSemana}`);
 }
 
-_start.onsubmit = proccess;
+document.getElementById("start04").onsubmit = iniciar;

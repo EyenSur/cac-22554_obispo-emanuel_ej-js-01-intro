@@ -1,11 +1,8 @@
-// Inicio
-console.log(`Ejercicio #2`);
-let _start;
-_start = document.getElementById("start");
-
-function proccess(e) {
-
+function iniciar(e) {
     e.preventDefault();
+
+    // Inicio
+    console.log(`\n————————————————————\nEjercicio #01\n————————————————————`);
 
     // Definir variables
     let _userNumber;
@@ -45,4 +42,4 @@ function proccess(e) {
     `)
 }
 
-_start.onsubmit = proccess;
+document.getElementById("start02").onsubmit = iniciar;

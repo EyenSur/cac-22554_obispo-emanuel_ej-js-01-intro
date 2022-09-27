@@ -1,11 +1,8 @@
-// Inicio
-console.log(`Ejercicio #8`);
-let _start;
-_start = document.getElementById("start");
-
-function proccess(e) {
-
+function iniciar(e) {
     e.preventDefault();
+
+    // Inicio
+    console.log(`\n————————————————————\nEjercicio #01\n————————————————————`);
 
     // Definir variables
     let _numberA;
@@ -47,4 +44,4 @@ function proccess(e) {
     console.log(`\nResultados:\n\nA + B || ${_numberA} + ${_numberB} == ${_numberA + _numberB}\n\nA - B || ${_numberA} - ${_numberB} == ${_numberA - _numberB}\n\nB - A || ${_numberB} - ${_numberA} == ${_numberB - _numberA}\n\nA * B || ${_numberA} * ${_numberB} == ${_numberA * _numberB}\n\nA / B || ${_numberA} / ${_numberB} == ${_numberA / _numberB}\n\nB / A || ${_numberB} / ${_numberA} == ${_numberB / _numberA}`);
 }
 
-_start.onsubmit = proccess;
+document.getElementById("start08").onsubmit = iniciar;
